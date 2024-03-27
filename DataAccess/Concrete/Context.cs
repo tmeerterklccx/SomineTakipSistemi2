@@ -12,7 +12,7 @@ namespace DataAccess.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=MERTPC;database=PrometheusSomine;integrated security=true");
+            optionsBuilder.UseSqlServer("server=MERTPC;database=PrometheusSomine;integrated security=true;TrustServerCertificate=True");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Announcement> Announcements { get; set; }

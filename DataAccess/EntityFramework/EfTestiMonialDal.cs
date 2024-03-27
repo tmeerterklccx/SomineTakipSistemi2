@@ -1,4 +1,5 @@
-﻿using DataAccess.Repositories;
+﻿using DataAccess.Abstract;
+using DataAccess.Repositories;
 using Entity.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.EntityFramework
 {
-    public class EfTestiMonialDal:GenericRepository<TestiMonial>
+    public class EfTestiMonialDal:GenericRepository<TestiMonial>,ITestiMonialDal
     {
     }
 }
