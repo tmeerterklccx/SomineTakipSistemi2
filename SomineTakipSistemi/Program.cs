@@ -1,15 +1,22 @@
 using Business.Abstract;
 using Business.Concrete;
 using DataAccess.Abstract;
+using DataAccess.Concrete;
 using DataAccess.EntityFramework;
+using Entity.Concrete;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<Context>();
 builder.Services.AddControllersWithViews();
+builder.Services.AddIdentity<AppUser,AppRole> ().AddEntityFrameworkStores<Context>();
 
 builder.Services.AddScoped<IAboutDal, EfAboutDal>();
 builder.Services.AddScoped<IAboutService, AboutManager>();
+
 builder.Services.AddScoped<IAnnouncementDal, EfAnnouncementDal>();
 builder.Services.AddScoped<IAnnouncementService, AnnouncementManager>();
 builder.Services.AddScoped<IContactInfoDal, EfContactInfoDal>();
@@ -44,8 +51,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
 app.UseAuthorization();
+app.UseAuthentication();
+
 
 app.MapControllerRoute(
     name: "Admin",

@@ -22,7 +22,6 @@ namespace SomineTakipSistemi.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Add()
         {
-
             return View();
         }
         [HttpPost]
