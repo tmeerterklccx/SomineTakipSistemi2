@@ -1,0 +1,26 @@
+﻿@using Entity.Concrete
+@model List<Entity.Concrete.MainTop>
+
+
+<section class="w3l-main-slider banner-slider" id="home">
+    <div class="owl-one owl-carousel owl-theme">
+        <div class="item">
+            <div class="slider-info banner-view banner-top1">
+                <div class="container">
+                    @foreach (var item in Model)
+                    {
+                        <div class="banner-info header-hero-19">
+                            <h3 class="title-hero-19">@item.HeadText</h3>
+                            <p class="w3ban-para">@item.BottomText <span class="w3-xtrap"></span> </p>
+
+
+                        </div>
+                    }
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>

@@ -1,4 +1,5 @@
-﻿
+﻿@using Entity.Concrete
+@model List<Service>
 @{
     Layout = "~/Views/Shared/_layoutMain.cshtml";
 }
@@ -57,76 +58,28 @@ Author URL: http://w3layouts.com
             <div class="container py-lg-5 py-md-4 py-2">
                 <div class="title-content text-center">
                     <h6 class="title-subw3hny mb-1">Services</h6>
-                    <h3 class="title-w3l">Industries Served</h3>
+                    <h3 class="title-w3l">Hizmetlerimiz</h3>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 grids-feature mt-md-5 mt-4">
-                        <div class="area-box">
-                            <i class="fas fa-archway" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4>
-                                    <a href="#feature" class="title-head">
-                                        Building &
-                                        Construction
-                                    </a>
-                                </h4>
-                                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+                @foreach(var item in Model)
+                {
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 grids-feature mt-md-5 mt-4">
+                            <div class="area-box">
+                                <i class="fas fa-archway" aria-hidden="true"></i>
+                                <div class="area-box-info">
+                                    <h4>
+                                        <a href="#feature" class="title-head">
+                                            @item.Name
+                                        </a>
+                                    </h4>
+                                    <p>@item.Description</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grids-feature mt-md-5 mt-4">
-                        <div class="area-box">
-                            <i class="fas fa-industry" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4><a href="#feature" class="title-head">Power & Energy</a></h4>
-                                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grids-feature mt-md-5 mt-4">
-                        <div class="area-box">
-                            <i class="fas fa-campground" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4><a href="#feature" class="title-head">Alternate Energy</a></h4>
-                                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grids-feature mt-md-5 mt-4">
-                        <div class="area-box">
-                            <i class="fas fa-tools" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4>
-                                    <a href="#feature" class="title-head">
-                                        Maintenance
-                                        & Repairs
-                                    </a>
-                                </h4>
-                                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grids-feature mt-md-5 mt-4">
-                        <div class="area-box">
-                            <i class="fas fa-flask" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4><a href="#feature" class="title-head">Chemical Research</a></h4>
-                                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6 grids-feature mt-md-5 mt-4">
-                        <div class="area-box">
-                            <i class="fas fa-burn" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4><a href="#feature" class="title-head">Petroleum & Gas</a></h4>
-                                <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
-                            </div>
-                        </div>
                     </div>
+                }
 
-                </div>
             </div>
         </div>
     </section>

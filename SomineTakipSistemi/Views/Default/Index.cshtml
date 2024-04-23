@@ -14,7 +14,7 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Factorship - Industrial Category Bootstrap Responsive Template | Home :: W3layouts</title>
+    <title>PROMETHEUS ŞÖMİNE</title>
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <!-- Template CSS -->
@@ -25,56 +25,11 @@ Author URL: http://w3layouts.com
     <!--//Header-->
     <!--/Banner-Start-->
     <!-- main-slider -->
-    <section class="w3l-main-slider banner-slider" id="home">
-        <div class="owl-one owl-carousel owl-theme">
-            <div class="item">
-                <div class="slider-info banner-view banner-top1">
-                    <div class="container">
-                        <div class="banner-info header-hero-19">
-                            <p class="w3hny-tag">Quality With Integrity</p>
-                            <h3 class="title-hero-19">The facility of applied intelligence.</h3>
-                            <p class="w3ban-para">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo. <span class="w3-xtrap">Ultrices in ligula,semper at tempufddfel.</span> </p>
-                            
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-     
-        </div>
-
-    </section>
+    @await Html.PartialAsync("birinciPart")
     <!-- //main-slider -->
     <!--/grids-->
-    <section class="w3l-grids-3 py-5" id="about">
-        <div class="container py-md-5 py-3">
-            <div class="bottom-ab-grids align-items-center">
-                <div class="w3ab-left-top">
-                    <h6 class="title-subw3hny mb-1">Our Info</h6>
-                    <h3 class="title-w3l mb-2">We are not your regular design agency we take the time to go further</h3>
-                    <p class="my-3 mb-5 px-lg-5"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                        Nulla mollis dapibus nunc, ut rhoncus
-                        turpis sodales quis. Integer sit amet mattis quam.</p>
+    @await Html.PartialAsync("ikinciPart")
 
-                    <!-- /home-page-video-popup-->
-                    <div class="w3l-index5 mt-3" id="video">
-                        <div class="position-relative">
-                            <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center position-absolute">
-                                <span class="video-play-icon">
-                                    <span class="fa fa-play"></span>
-                                </span>
-                            </a>
-                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                                <iframe src="https://player.vimeo.com/video/13618190" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <!-- //home-page-video-popup-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!--//grids-->
 
     <!--/w3-grids-->
@@ -82,140 +37,8 @@ Author URL: http://w3layouts.com
     <!-- features section -->
     <!--//features section -->
     <!--/Gallery-Section-->
-    <section class="w3l-gallery" id="gallery">
-        <div class="destionation-innf py-5">
-            <div class="container py-lg-5 py-md-4 py-2 HomePageGallery">
-                <div class="title-content text-center">
-                    <h6 class="title-subw3hny text-center">Gallery</h6>
-                    <h3 class="title-w3l mb-5 text-center">Latest Projects</h3>
-                </div>
-                <!--/grids-grids-->
-                <ul class="gallery_agile">
-                    <li>
-                        <div class="w3_agile_portfolio_grid">
-                            <a href="~/Factorship-Starter/assets/images/g1.jpg">
-                                <img src="~/Factorship-Starter/assets/images/g1.jpg" alt=" " class="img-fluid radius-image" />
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3>Factorship</h3>
-                                        <p>Lorem Ipsum</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="w3_agile_portfolio_grid">
-                            <a href="~/Factorship-Starter/assets/images/g2.jpg">
-                                <img src="~/Factorship-Starter/assets/images/g2.jpg" alt=" " class="img-fluid radius-image" />
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3>Factorship</h3>
-                                        <p>Lorem Ipsum</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="w3_agile_portfolio_grid">
-                            <a href="~/Factorship-Starter/assets/images/g3.jpg">
-                                <img src="~/Factorship-Starter/assets/images/g3.jpg" alt=" " class="img-fluid radius-image" />
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3>Factorship</h3>
-                                        <p>Lorem Ipsum</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+    @await Html.PartialAsync("ucuncuPart")
 
-                    </li>
-                    <li>
-                        <div class="w3_agile_portfolio_grid">
-                            <a href="~/Factorship-Starter/assets/images/g4.jpg">
-                                <img src="~/Factorship-Starter/assets/images/g4.jpg" alt=" " class="img-fluid radius-image" />
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3>Factorship</h3>
-                                        <p>Lorem Ipsum</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="w3_agile_portfolio_grid">
-                            <a href="~/Factorship-Starter/assets/images/g5.jpg">
-                                <img src="~/Factorship-Starter/assets/images/g5.jpg" alt=" " class="img-fluid radius-image" />
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3>Factorship</h3>
-                                        <p>Lorem Ipsum</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="w3_agile_portfolio_grid">
-                            <a href="~/Factorship-Starter/assets/images/g6.jpg">
-                                <img src="~/Factorship-Starter/assets/images/g6.jpg" alt=" " class="img-fluid radius-image" />
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3>Factorship</h3>
-                                        <p>Lorem Ipsum</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </li>
-                    <li>
-                        <div class="w3_agile_portfolio_grid">
-                            <a href="~/Factorship-Starter/assets/images/g7.jpg">
-                                <img src="~/Factorship-Starter/assets/images/g7.jpg" alt=" " class="img-fluid radius-image" />
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3>Factorship</h3>
-                                        <p>Lorem Ipsum</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="w3_agile_portfolio_grid">
-                            <a href="~/Factorship-Starter/assets/images/g8.jpg">
-                                <img src="~/Factorship-Starter/assets/images/g8.jpg" alt=" " class="img-fluid radius-image" />
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3>Factorship</h3>
-                                        <p>Lorem Ipsum</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="w3_agile_portfolio_grid">
-                            <a href="~/Factorship-Starter/assets/images/g9.jpg">
-                                <img src="~/Factorship-Starter/assets/images/g9.jpg" alt=" " class="img-fluid radius-image" />
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3>Factorship</h3>
-                                        <p>Lorem Ipsum</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </li>
-                </ul>
-                <!--//rids-grids-->
-            </div>
-        </div>
-    </section>
     <!--//Gallery-Section-->
     <!--/w3-grids-->
     <!--//w3-grids-->
@@ -223,92 +46,6 @@ Author URL: http://w3layouts.com
     <!--/w3l-subscribe-content-->
     <!--//w3l-subscribe-content-->
     <!--/testimonials-->
-    <section class="w3l-testimonials" id="testimonials">
-        <!-- /grids -->
-        <div class="cusrtomer-layout py-5">
-            <div class="container py-lg-4 py-md-3 py-2 pb-lg-0">
-
-                <div class="title-content text-center">
-                    <h6 class="title-subw3hny">Testimonials</h6>
-                    <h3 class="title-w3l mb-5">Reviews of
-                        our Clients</h3>
-                </div>
-                <!-- /grids -->
-                <div class="testimonial-width pt-lg-4">
-                    <div class="row justify-content-center">
-                        <div class="item col-lg-4 col-md-6">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <div class="test-img">
-                                        <img src="~/Factorship-Starter/assets/images/team1.jpg" class="img-fluid" alt="client-img">
-                                    </div>
-                                    <blockquote>
-                                        <i class="fas fa-quote-right"></i>
-                                        <q>Lorem ipsum dolor sit amet elit. Velit beatae
-                                            laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus
-                                            tempora.</q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="peopl align-self">
-                                            <h3>John wilson</h3>
-                                            <p class="indentity">Example City</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-lg-4 col-md-6">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <div class="test-img">
-                                        <img src="~/Factorship-Starter/assets/images/team2.jpg" class="img-fluid" alt="client-img">
-                                    </div>
-                                    <blockquote>
-                                        <i class="fas fa-quote-right"></i>
-                                        <q>Lorem ipsum dolor sit amet elit. Velit beatae
-                                            laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus
-                                            tempora.</q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="peopl align-self">
-                                            <h3>Julia sakura</h3>
-                                            <p class="indentity">Example City</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-lg-4 col-md-6">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <div class="test-img">
-                                        <img src="~/Factorship-Starter/assets/images/team3.jpg" class="img-fluid" alt="client-img">
-                                    </div>
-                                    <blockquote>
-                                        <i class="fas fa-quote-right"></i>
-                                        <q>Lorem ipsum dolor sit amet elit. Velit beatae
-                                            laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus
-                                            tempora.</q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="peopl align-self">
-                                            <h3>Roy Linderson</h3>
-                                            <p class="indentity">Example City</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /grids -->
-        </div>
-        <!-- //grids -->
-    </section>
     <!--//testimonials-->
     <!--/footer-9-->
     <footer class="w3l-footer9">

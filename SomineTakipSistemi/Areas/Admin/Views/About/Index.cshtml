@@ -1,4 +1,6 @@
-﻿
+﻿@using Entity.Concrete;
+@model List<About>
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/_adminLayout.cshtml";
@@ -9,71 +11,37 @@
     <div class="card">
         <div class="card-body">
             <div class="card-title">
-                <h4>Table Hover</h4>
+                <h4>Hakkımda Bilgileri</h4>
             </div>
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Name</th>
-                            <th>Status</th>
-                            <th>Date</th>
-                            <th>Price</th>
+                            <th>Başlık Yazısı</th>
+                            <th>Açıklama Yazısı</th>
                             <th>Güncelle</th>
                             <th>Sil</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach(var item in Model)
+                        {
+                            
+                        
                         <tr>
-                            <th>1</th>
-                            <td>Kolor Tea Shirt For Man</td>
-                            <td>
-                                <span class="badge badge-primary px-2">Sale</span>
-                            </td>
-                            <td>January 22</td>
-                            <td class="color-primary">$21.56</td>
-                            <td><a class="btn mb-1 btn-rounded btn-warning" href="~/About/Edit/">Güncelle</a></td>
-                            <td><a class="btn mb-1 btn-rounded btn-danger" href="#">Sil</a></td>
+                            <th>@item.ID</th>
+                            <td>@item.HeadText</td>
+                            <td>@item.Description</td>
+                                <td><a class="btn mb-1 btn-rounded btn-warning" href="~/Admin/About/Update/@item.ID">Güncelle</a></td>
+                                <td><a class="btn mb-1 btn-rounded btn-danger" href="~/Admin/About/Delete/@item.ID">Sil</a></td>
                         </tr>
-                        <tr>
-                            <th>1</th>
-                            <td>Kolor Tea Shirt For Man</td>
-                            <td>
-                                <span class="badge badge-primary px-2">Sale</span>
-                            </td>
-                            <td>January 22</td>
-                            <td class="color-primary">$21.56</td>
-                            <td><a class="btn mb-1 btn-rounded btn-warning" href="~/About/Edit/">Güncelle</a></td>
-                            <td><a class="btn mb-1 btn-rounded btn-danger" href="#">Sil</a></td>
-                        </tr>
-                        <tr>
-                            <th>1</th>
-                            <td>Kolor Tea Shirt For Man</td>
-                            <td>
-                                <span class="badge badge-primary px-2">Sale</span>
-                            </td>
-                            <td>January 22</td>
-                            <td class="color-primary">$21.56</td>
-                            <td><a class="btn mb-1 btn-rounded btn-warning" href="~/About/Edit/">Güncelle</a></td>
-                            <td><a class="btn mb-1 btn-rounded btn-danger" href="#">Sil</a></td>
-                        </tr>
-                        <tr>
-                            <th>1</th>
-                            <td>Kolor Tea Shirt For Man</td>
-                            <td>
-                                <span class="badge badge-primary px-2">Sale</span>
-                            </td>
-                            <td>January 22</td>
-                            <td class="color-primary">$21.56</td>
-                            <td><a class="btn mb-1 btn-rounded btn-warning" href="~/About/Edit/">Güncelle</a></td>
-                            <td><a class="btn mb-1 btn-rounded btn-danger" href="#">Sil</a></td>
-                        </tr>
+                        }
                     </tbody>
                 </table>
                 <br />
                 <br />
-                <a href="#" class="btn mb-1 btn-primary btn-lg">Yeni Kayıt Ekle</a>
+                <a href="~/Admin/About/Add/" class="btn mb-1 btn-primary btn-lg">Yeni Kayıt Ekle</a>
             </div>
         </div>
     </div>
