@@ -23,8 +23,11 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Başlık Yazısı</th>
-                            <th>Açıklama Yazısı</th>
+                            <th>İsim</th>
+                            <th>Numara</th>
+                            <th>Mail</th>
+                            <th>Konu</th>
+                            <th>Mesaj</th>
                             <th>Güncelle</th>
                             <th>Sil</th>
                         </tr>
@@ -38,6 +41,9 @@
                                 <th>@item.ID</th>
                                 <td>@item.Name</td>
                                 <td>@item.Number</td>
+                                <td>@item.Mail</td>
+                                <td>@item.Subject</td>
+                                <td>@item.Message</td>
                                 <td><a class="btn mb-1 btn-rounded btn-warning" href="~/Admin/GetContact/Update/@item.ID">Güncelle</a></td>
                                 <td><a class="btn mb-1 btn-rounded btn-danger" href="~/Admin/GetContact/Delete/@item.ID">Sil</a></td>
                             </tr>
@@ -46,7 +52,7 @@
                 </table>
                 <br />
                 <br />
-                <a href="~/Admin/MainTop/Add/" class="btn mb-1 btn-primary btn-lg">Yeni Kayıt Ekle</a>
+                <a href="~/Admin/GetContact/Add/" class="btn mb-1 btn-primary btn-lg">Yeni Kayıt Ekle</a>
             </div>
         </div>
     </div>

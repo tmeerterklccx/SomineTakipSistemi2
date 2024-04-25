@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Areas/Admin/Views/_adminLayout.cshtml";
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="~/adminimages/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="~/admin/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Ürün Ekle</h4>
+                <div class="basic-form">
+                    <form method="post">
+                        <div class="form-group">
+                            <label>Ürün Adı</label>
+                            <input name="ProductName" type="text" class="form-control input-default" placeholder="Örnek Ürün Adı">
+                            <br />
+                            <label>Açıklama</label>
+                            <input name="ProductDescription" type="text" class="form-control input-default" placeholder="Örnek Açıklama">
+                            <br />
+                            <label>Resim Linki</label>
+                            <input name="ProductImageLink" type="text" class="form-control input-default" placeholder="Resim Linki">
+                            <br />
+                            <br />
+                            <br />
+                            <button class="btn btn-primary">Kaydet</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

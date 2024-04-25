@@ -43,7 +43,7 @@
             <label for="username">Kullanıcı Adı</label>
             <div class="sec-2">
                 <ion-icon name="mail-outline"></ion-icon>
-                <input type="text" name="email" placeholder="Kullanıcı Adınız" />
+                    <input required type="text" name="UserName" placeholder="Kullanıcı Adınız" />
             </div>
         </div>
         <br />
@@ -51,12 +51,15 @@
             <label for="password">Şifre</label>
             <div class="sec-2">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input class="pas" type="password" name="password" placeholder="············" />
+                <input required class="pas" type="password" name="PasswordHash" placeholder="············" />
                 <ion-icon class="show-hide" name="eye-outline"></ion-icon>
             </div>
         </div>
         <br />
         <button class="login">Giriş Yap </button>
+        <br />
+        <br />
+            <p style="color:red;">@ViewBag.User</p>
         </form>
         <div class="footer"><a href="~/Auth/Register/"><span>Kayıt Ol</span></a><a href="~/Default/Index/"><span>Ana Sayfa</span></a></div>
     </div>

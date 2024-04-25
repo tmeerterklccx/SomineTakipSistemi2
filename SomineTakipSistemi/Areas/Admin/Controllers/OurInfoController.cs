@@ -1,10 +1,13 @@
 ﻿using Business.Abstract;
 using Entity.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace SomineTakipSistemi.Areas.Admin.Controllers
 {
     [Area("Admin")]
+
     public class OurInfoController : Controller
     {
         private readonly IOurInfoService _service;

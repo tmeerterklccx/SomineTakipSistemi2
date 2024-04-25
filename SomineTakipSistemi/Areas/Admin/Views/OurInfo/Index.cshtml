@@ -6,12 +6,6 @@
 }
 
 
-@{
-    ViewData["Title"] = "Index";
-    Layout = "~/Areas/Admin/Views/_adminLayout.cshtml";
-}
-
-
 <div class="col-lg-12">
     <div class="card">
         <div class="card-body">
@@ -40,15 +34,15 @@
                                 <td>@item.HeadText</td>
                                 <td>@item.BottomText</td>
                                 <td>@item.ImageLink</td>
-                                <td><a class="btn mb-1 btn-rounded btn-warning" href="~/Admin/MainTop/Update/@item.ID">Güncelle</a></td>
-                                <td><a class="btn mb-1 btn-rounded btn-danger" href="~/Admin/MainTop/Delete/@item.ID">Sil</a></td>
+                                <td><a class="btn mb-1 btn-rounded btn-warning" href="~/Admin/OurInfo/Update/@item.ID/">Güncelle</a></td>
+                                <td><a class="btn mb-1 btn-rounded btn-danger" href="~/Admin/OurInfo/Delete/@item.ID">Sil</a></td>
                             </tr>
                         }
                     </tbody>
                 </table>
                 <br />
                 <br />
-                <a href="~/Admin/MainTop/Add/" class="btn mb-1 btn-primary btn-lg">Yeni Kayıt Ekle</a>
+                <a href="~/Admin/OurInfo/Add/" class="btn mb-1 btn-primary btn-lg">Yeni Kayıt Ekle</a>
             </div>
         </div>
     </div>

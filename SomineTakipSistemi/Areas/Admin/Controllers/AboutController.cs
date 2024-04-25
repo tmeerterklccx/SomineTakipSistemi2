@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace SomineTakipSistemi.Areas.Admin.Controllers
 {
     [Area("Admin")]
+
     public class AboutController : Controller
     {
         private readonly IAboutService _aboutService;
@@ -41,14 +42,17 @@ namespace SomineTakipSistemi.Areas.Admin.Controllers
         public IActionResult Update(int id)
         {
             var value = _aboutService.TGetByID(id);
+            ViewBag.HeadText = value.HeadText;
+            ViewBag.Description = value.Description;
             return View(value);
         }
         [HttpPost]
         public IActionResult Update(int id,About about)
         {
             var value = _aboutService.TGetByID(id);
-            value.Description = about.Description;
             value.HeadText = about.HeadText;
+            value.Description = about.Description;
+            
             _aboutService.TUpdate(value);
             return RedirectToAction("Index", "About", "Admin");
         }

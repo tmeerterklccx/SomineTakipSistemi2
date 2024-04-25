@@ -7,22 +7,16 @@ namespace SomineTakipSistemi.Controllers
 {
     public class DefaultController : Controller
     {
-        private readonly IMainTopService _mainTopService;
-
-        public DefaultController(IMainTopService mainTopService)
-        {
-            _mainTopService = mainTopService;
-        }
 
         public IActionResult Index()
         {
             return View();
         }
-        public async Task< PartialViewResult> birinciPart()
+        public PartialViewResult birinciPart()
         {
 
-            var context = new Context();
-            var values =await context.MainTops.ToListAsync();
+            using var context = new Context();
+            var values = context.MainTops.ToList();
             return PartialView(values);
         }
 

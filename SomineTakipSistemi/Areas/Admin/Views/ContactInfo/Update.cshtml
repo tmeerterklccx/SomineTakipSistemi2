@@ -1,0 +1,55 @@
+﻿@model Entity.Concrete.ContactInfo
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/Admin/Views/_adminLayout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="~/adminimages/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="~/admin/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">İletişim Bilgileri Güncelle</h4>
+                <div class="basic-form">
+                    <form method="post">
+                        <div class="form-group">
+                            <label>Başlık Yazısı</label>
+                            <input name="HeadText" type="text" class="form-control input-default" placeholder="Örnek Başlık">
+                            <br />
+                            <label>Açıklama Yazısı</label>
+                            <input name="BottomText" type="text" class="form-control input-default" placeholder="Örnek Açıklama">
+                            <br />
+                            <label>Adres</label>
+                            <input name="Address" type="text" class="form-control input-default" placeholder="Örnek Açıklama">
+                            <br />
+                            <label>Numara</label>
+                            <input name="Number" type="text" class="form-control input-default" placeholder="Örnek Açıklama">
+                            <br />
+                            <label>EMail</label>
+                            <input name="EMail" type="text" class="form-control input-default" placeholder="Örnek Açıklama">
+                            <br />
+                            <br />
+                            <button class="btn btn-primary">Kaydet</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
