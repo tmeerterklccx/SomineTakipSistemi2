@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using DataAccess.Concrete;
 using Entity.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,8 +23,7 @@ namespace SomineTakipSistemi.Areas.Admin.Controllers
         }
         [HttpGet]
         public IActionResult Add()
-        {
-            
+        {    
             return View();
         }
         [HttpPost]
@@ -38,13 +38,14 @@ namespace SomineTakipSistemi.Areas.Admin.Controllers
             _aboutService.TDelete(value);
             return RedirectToAction("Index", "About", "Admin");
         }
-        [HttpGet]
         public IActionResult Update(int id)
         {
+            using var context = new Context();
+            var deger = context.Abouts.Find(id);
             var value = _aboutService.TGetByID(id);
             ViewBag.HeadText = value.HeadText;
             ViewBag.Description = value.Description;
-            return View(value);
+            return View(deger);
         }
         [HttpPost]
         public IActionResult Update(int id,About about)

@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = "~/Views/Shared/_layoutMain.cshtml";
 }
 
@@ -14,7 +13,7 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PROMETHEUS ŞÖMİNE</title>
+    <title>Factorship - Industrial Category Bootstrap Responsive Template | Contact :: W3layouts</title>
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <!-- Template CSS -->
@@ -22,32 +21,69 @@ Author URL: http://w3layouts.com
 </head>
 
 <body>
+    <!--/Header-->
     <!--//Header-->
-    <!--/Banner-Start-->
-    <!-- main-slider -->
-    @await Component.InvokeAsync("PartialBirComponent")
-    <!-- //main-slider -->
-    <!--/grids-->
-    @await Component.InvokeAsync("PartialIkiComponent")
+    <!--/inner-page-->
+    <div class="inner-banner py-5">
+        <section class="w3l-breadcrumb text-left py-sm-5 ">
+            <div class="container">
+                <div class="w3breadcrumb-gids">
+                    <div class="w3breadcrumb-left text-left">
+                        <h2 class="inner-w3-title mt-sm-5 mt-4">
+                            Contact Us
+                        </h2>
+                    </div>
+                    <div class="w3breadcrumb-right">
+                        <ul class="breadcrumbs-custom-path">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><span class="fas fa-angle-double-right mx-2"></span> Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <!--//grids-->
+            </div>
+        </section>
+    </div>
+    <!--//inner-page-->
+    <!-- contact-form -->
+    <section class="w3l-contact-main" id="contact">
+        <div class="contact-infhny py-5 pb-0">
+            <div class="container py-lg-3 pb-0">
+                <div class="top-map">
+                    <div class="map-content-9">
+                        <form method="post">
+                            <div class="form-top1">
+                                <div class="w3header-section text-center">
+                                    <h3 class="title-w3l mb-0">
+                                        Satın Alım Formu
+                                    </h3>
+                                    <p class="mb-lg-5 mb-4 text-center">
+                                        Lütfen aşağıdaki bilgileri eksiksiz ve doğru bir biçimde doldurunuz.
+                                    </p>
+                                </div>
 
-    <!--/w3-grids-->
-    <!--//w3-grids-->
-    <!-- features section -->
-    <!--//features section -->
-    <!--/Gallery-Section-->
-    @await Component.InvokeAsync("PartialUcComponent")
+                                <div class="form-top">
+                                    <div class="form-top-left">
+                                        <input disabled type="text" name="w3lName" id="w3lName" value="@ViewBag.Email">
+                                        <input type="text" name="w3lPhone" placeholder="Yüksekik" required="">
+                                        <input type="text" name="w3lSender" id="w3lSender" placeholder="Genişlik" required="">
+                                        <input type="text" name="w3lSubject" id="w3lName" value="@ViewBag.ProductName" disabled>
+                                    </div>
+                                    <div class="form-top-righ">
+                                        <textarea name="w3lMessage" id="w3lMessage" placeholder="Adresiniz" required=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="text-lg-right text-center">
+                                    <button type="submit" class="btn btn-style btn-primary">Gönder <i class="fas fa-paper-plane ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!--//Gallery-Section-->
-    <!--/w3-grids-->
-    <!--//w3-grids-->
-
-    <!--/w3l-subscribe-content-->
-    <!--//w3l-subscribe-content-->
-    <!--/testimonials-->
-    <!--//testimonials-->
-    <!--/footer-9-->
     <footer class="w3l-footer9">
         <section class="footer-inner-main py-5">
             <div class="container py-md-3">
@@ -58,13 +94,17 @@ Author URL: http://w3layouts.com
                             <p class="footer-phny pe-lg-5">Since 1960,. has built a reputation for producing high quality precision fabricated products for use in a variety of industries.</p>
                             <div class="columns-2 mt-lg-5 mt-4">
                                 <ul class="social">
-                                    <li><a href="#facebook"><span class="fab fa-facebook-f"></span></a>
+                                    <li>
+                                        <a href="#facebook"><span class="fab fa-facebook-f"></span></a>
                                     </li>
-                                    <li><a href="#linkedin"><span class="fab fa-linkedin-in"></span></a>
+                                    <li>
+                                        <a href="#linkedin"><span class="fab fa-linkedin-in"></span></a>
                                     </li>
-                                    <li><a href="#twitter"><span class="fab fa-twitter"></span></a>
+                                    <li>
+                                        <a href="#twitter"><span class="fab fa-twitter"></span></a>
                                     </li>
-                                    <li><a href="#google"><span class="fab fa-google-plus-g"></span></a>
+                                    <li>
+                                        <a href="#google"><span class="fab fa-google-plus-g"></span></a>
                                     </li>
 
                                 </ul>
@@ -73,13 +113,17 @@ Author URL: http://w3layouts.com
                         <div class="col-lg-3 sub-two-right">
                             <h6>Services</h6>
                             <ul>
-                                <li><a href="#processing"><i class="fas fa-angle-right"></i> Agriculture Processing</a>
+                                <li>
+                                    <a href="#processing"><i class="fas fa-angle-right"></i> Agriculture Processing</a>
                                 </li>
-                                <li><a href="#research"><i class="fas fa-angle-right"></i> Chemical Research</a>
+                                <li>
+                                    <a href="#research"><i class="fas fa-angle-right"></i> Chemical Research</a>
                                 </li>
-                                <li><a href="#metal"><i class="fas fa-angle-right"></i> Metal Engineering</a>
+                                <li>
+                                    <a href="#metal"><i class="fas fa-angle-right"></i> Metal Engineering</a>
                                 </li>
-                                <li><a href="#gas"><i class="fas fa-angle-right"></i> Petroleum & Gas</a>
+                                <li>
+                                    <a href="#gas"><i class="fas fa-angle-right"></i> Petroleum & Gas</a>
                                 </li>
                                 <li><a href="#work"><i class="fas fa-angle-right"></i> Mechanical Engineering</a></li>
 
@@ -90,15 +134,24 @@ Author URL: http://w3layouts.com
                             <h6>Our Links</h6>
                             <ul>
 
-                                <li><a href="#why"><i class="fas fa-angle-right"></i> Why us</a>
+                                <li>
+                                    <a href="#why"><i class="fas fa-angle-right"></i> Why us</a>
                                 </li>
-                                <li><a href="#licence"><i class="fas fa-angle-right"></i> Licensing
+                                <li>
+                                    <a href="#licence">
+                                        <i class="fas fa-angle-right"></i> Licensing
                                     </a>
                                 </li>
-                                <li><a href="#log"><i class="fas fa-angle-right"></i> Offers
-                                    </a></li>
-                                <li><a href="#log"><i class="fas fa-angle-right"></i> Changelog
-                                    </a></li>
+                                <li>
+                                    <a href="#log">
+                                        <i class="fas fa-angle-right"></i> Offers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#log">
+                                        <i class="fas fa-angle-right"></i> Changelog
+                                    </a>
+                                </li>
                                 <li><a href="#career"><i class="fas fa-angle-right"></i> Careers</a></li>
 
                             </ul>
@@ -138,13 +191,18 @@ Author URL: http://w3layouts.com
                 <div class="below-section mt-5">
                     <div class="copyright-footer">
                         <div class="columns text-left">
-                            <p>© 2021 Factorship. All rights reserved.All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank">
-                                    W3Layouts</a></p>
+                            <p>
+                                © 2021 Factorship. All rights reserved.All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank">
+                                    W3Layouts
+                                </a>
+                            </p>
                         </div>
                         <ul class="footer-w3list text-right">
-                            <li><a href="#url">Privacy Policy</a>
+                            <li>
+                                <a href="#url">Privacy Policy</a>
                             </li>
-                            <li><a href="#url">Terms &amp; Conditions</a>
+                            <li>
+                                <a href="#url">Terms &amp; Conditions</a>
                             </li>
                         </ul>
                     </div>
@@ -160,7 +218,7 @@ Author URL: http://w3layouts.com
         </button>
         <script>
             // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {
+            window.onscroll = function () {
                 scrollFunction()
             };
 
@@ -182,9 +240,8 @@ Author URL: http://w3layouts.com
         <!-- //move top -->
     </footer>
     <!--//footer-9 -->
-
     <!-- Template JavaScript -->
-    <script src="~/Factorship-Starter/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Factorship-Starter/aassets/js/jquery-3.3.1.min.js"></script>
     <script src="~/Factorship-Starter/assets/js/theme-change.js"></script>
     <!--/search-->
     <script src="~/Factorship-Starter/assets/js/modernizr.custom.js"></script>
@@ -193,7 +250,7 @@ Author URL: http://w3layouts.com
     <!--//search-->
     <!-- MENU-JS -->
     <script>
-        $(window).on("scroll", function() {
+        $(window).on("scroll", function () {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 80) {
@@ -204,14 +261,14 @@ Author URL: http://w3layouts.com
         });
 
         //Main navigation Active Class Add Remove
-        $(".navbar-toggler").on("click", function() {
+        $(".navbar-toggler").on("click", function () {
             $("header").toggleClass("active");
         });
-        $(document).on("ready", function() {
+        $(document).on("ready", function () {
             if ($(window).width() > 991) {
                 $("header").removeClass("active");
             }
-            $(window).on("resize", function() {
+            $(window).on("resize", function () {
                 if ($(window).width() > 991) {
                     $("header").removeClass("active");
                 }
@@ -220,11 +277,10 @@ Author URL: http://w3layouts.com
 
     </script>
     <!-- //MENU-JS -->
-
     <!-- disable body scroll which navbar is in active -->
     <script>
-        $(function() {
-            $('.navbar-toggler').click(function() {
+        $(function () {
+            $('.navbar-toggler').click(function () {
                 $('body').toggleClass('noscroll');
             })
         });

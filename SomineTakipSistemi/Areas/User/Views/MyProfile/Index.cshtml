@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/User/Views/_userLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="~/admin/images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="~/admin/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Hakkımda Ekle</h4>
+                <div class="basic-form">
+                    <form method="post">
+                        <div class="form-group">
+                            <label>Kullanıcı Adım</label>
+                            <input name="HeadText" disabled type="text" class="form-control input-default" value="@ViewBag.userName">
+                            <br />
+                            <label>E Posta Adresim</label>
+                            <input name="HeadText" disabled type="text" class="form-control input-default" value="@ViewBag.Email">
+                            <br />
+                            <label>Telefon Numaram</label>
+                            <input name="HeadText" disabled type="text" class="form-control input-default" value="@ViewBag.Number">
+                            <br />
+                            <br />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+

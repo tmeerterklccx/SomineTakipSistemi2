@@ -24,19 +24,17 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Hakkımda Güncelle</h4>
-                <div class="basic-form">
-                    <form method="post" action="/Admin/About/Update">
-                        <div class="form-group">
-                            <label>Başlık Yazısı</label>
-                            <input type="text" class="form-control input-default" asp-for="HeadText" >
-                            <br />
-                            <label>Açıklama Yazısı</label>
-                            <input type="text" class="form-control input-default" asp-for="Description">
-                            <br />
-                            <button type="submit" class="btn btn-primary">Kaydet</button>
-                        </div>
-                    </form>
-                </div>
+                <form method="post">
+
+                    <label for="HeadText">Başlık Yazısı</label>
+                    <input type="text" required name="HeadText" class="form-control" asp-for="HeadText">
+                    <br />
+                    <label for="Description">Açıklama Yazısı</label>
+                    <input required type="text" name="Description" class="form-control" asp-for="Description">
+                    <br />
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+
+                </form>
             </div>
         </div>
     </div>
