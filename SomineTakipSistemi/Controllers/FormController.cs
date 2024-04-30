@@ -26,7 +26,7 @@ namespace SomineTakipSistemi.Controllers
                 ViewBag.ProductName = product.ProductName;
                 return View();
             }
-            return View();
+            return RedirectToAction("Login","Auth");
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Data;
 namespace SomineTakipSistemi.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+ 
     public class ContactInfoController : Controller
     {
         private readonly IContactInfoService _contactInfoService;

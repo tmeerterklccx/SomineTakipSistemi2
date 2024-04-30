@@ -7,7 +7,6 @@ using System.Data;
 namespace SomineTakipSistemi.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
     public class MainTopController : Controller
     {
         private readonly IMainTopService _mainTopService;
