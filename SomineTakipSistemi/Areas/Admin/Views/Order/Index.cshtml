@@ -1,0 +1,61 @@
+﻿@using Entity.Concrete
+@model List<Order>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/_adminLayout.cshtml";
+}
+
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">
+                <h4>Siparişler</h4>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ürün Adı</th>
+                            <th>Müşteri E Posta</th>
+                            <th>Genişlik</th>
+                            <th>Yükseklik</th>
+                            <th>Adres</th>
+                            <th>Statü</th>
+                            <th>Sil</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+
+
+                            <tr>
+                                <th>@item.OrderID</th>
+                                <td>@item.ProductName</td>
+                                <td>@item.UserMail</td>
+                                <td>@item.Genislik</td>
+                                <td>@item.Yukseklik</td>
+                                <td>@item.Adres</td>
+                                @if (item.Statu == true)
+                                {
+                                    <td><a class="btn mb-1 btn-rounded btn-success" href="~/Admin/Order/ChangeStatus/@item.OrderID">AKTİF</a></td>
+                                }
+                                else
+                                {
+                                    <td><a class="btn mb-1 btn-rounded btn-danger" href="~/Admin/Order/ChangeStatus/@item.OrderID">PASİF</a></td>
+                                }
+                                <td><a class="btn mb-1 btn-rounded btn-danger" href="~/Admin/Order/Delete/@item.OrderID">Sil</a></td>
+                                
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <br />
+            </div>
+        </div>
+    </div>
+    <!-- /# card -->
+</div>

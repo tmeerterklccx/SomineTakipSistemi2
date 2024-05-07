@@ -35,6 +35,8 @@ builder.Services.AddScoped<IServiceDal, EfServiceDal>();
 builder.Services.AddScoped<IServiceService, ServiceManager>();
 builder.Services.AddScoped<ITestiMonialDal, EfTestiMonialDal>();
 builder.Services.AddScoped<ITestiMonialService, TestiMonialManager>();
+builder.Services.AddScoped<IOrderDal, EfOrderDal>();
+builder.Services.AddScoped<IOrderService, OrderManager>();
 
 
 var app = builder.Build();

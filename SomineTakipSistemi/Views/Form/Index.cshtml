@@ -64,17 +64,20 @@ Author URL: http://w3layouts.com
 
                                 <div class="form-top">
                                     <div class="form-top-left">
-                                        <input disabled type="text" name="w3lName" id="w3lName" value="@ViewBag.Email">
-                                        <input type="text" name="w3lPhone" placeholder="Yüksekik" required="">
-                                        <input type="text" name="w3lSender" id="w3lSender" placeholder="Genişlik" required="">
-                                        <input type="text" name="w3lSubject" id="w3lName" value="@ViewBag.ProductName" disabled>
+                                        <input disabled type="text" name="UserMail" placeholder="@ViewBag.Email" value="@ViewBag.Email">
+                                        <input type="text" name="Yukseklik" placeholder="Yüksekik" required="">
+                                        <input type="text" name="Genislik" placeholder="Genişlik" required="">
+                                        <input type="text" name="ProductName" value="@ViewBag.ProductName" placeholder="@ViewBag.ProductName" disabled>
                                     </div>
                                     <div class="form-top-righ">
-                                        <textarea name="w3lMessage" id="w3lMessage" placeholder="Adresiniz" required=""></textarea>
+                                        <textarea name="Adres" placeholder="Adresiniz" required=""></textarea>
                                     </div>
                                 </div>
                                 <div class="text-lg-right text-center">
                                     <button type="submit" class="btn btn-style btn-primary">Gönder <i class="fas fa-paper-plane ms-2"></i></button>
+                                    <br />
+                                    <br/>
+                                    <p style="color:wheat;background-color:green;">@ViewBag.Onay</p>
                                 </div>
                             </div>
                         </form>

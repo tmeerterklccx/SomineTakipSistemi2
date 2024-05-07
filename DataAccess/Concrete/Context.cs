@@ -25,5 +25,6 @@ namespace DataAccess.Concrete
         public DbSet<Product> Products { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<TestiMonial> TestiMonials { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
